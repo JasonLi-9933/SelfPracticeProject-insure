@@ -1,0 +1,291 @@
+/* Set Font Family */
+#intro, #features {
+  font-family: "DM Serif Display";
+}
+
+#NavBar, #footer {
+  font-family: "Karla";
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* NavBar */
+#NavBar {
+  padding: 0 4.5rem;
+  font-weight: 700;
+  background: white;
+  position: relative;
+  z-index: 4;
+  /* margin-bottom: -1rem; */
+}
+
+
+.nav-item {
+  font-size: 0.8rem;
+  padding: 0 1rem;
+  color: hsl(0, 0%, 98%);
+  text-align: center;
+}
+
+.nav-item:hover {
+  color: hsl(270, 9%, 17%);
+
+}
+
+.navbar-toggler {
+  border: transparent;
+}
+
+.navButton {
+  border: 1.5px solid black;
+  background-color: white;
+  height: 1.6rem;
+  width: 7rem;
+  margin-top: 0.4rem;
+  color: black;
+}
+
+.navButton:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Intro Section */
+.introCotent {
+  background-color:  hsl(256, 26%, 20%);
+  color: white;
+  height: 45rem;
+  margin-top: -1rem;
+  padding: 4% 50% 4% 3%;
+  line-height: 1;
+  text-align: left;
+  /* background-image: url("images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right; */
+}
+
+.introLeftImg, .introRightImg {
+  position: absolute;
+  z-index: 3;
+}
+
+.introRightImg {
+  right:0;
+  top:0;
+}
+
+.introLeftImg {
+  left:0;
+  top:35rem;
+}
+
+.familyImg {
+  position: absolute;
+  margin-top: 12rem;
+  margin-left: 55rem;
+}
+
+.introRule {
+  border-width: 2px;
+  border-color: hsl(216, 30%, 68%);
+  width: 12rem;
+  margin-left: 0;
+  padding:3rem 0 6rem 0;
+}
+.introTitle {
+  font-size: 4rem;
+  margin-top:-4rem;
+}
+
+.introDescription {
+  line-height: 1.5;
+  font-family: "Karla";
+  font-weight: 400;
+}
+
+.introButton {
+  font-family: "Karla";
+  width:10rem;
+  height:2.5rem;
+  border-radius: 0;
+  background-color: hsl(256, 26%, 20%);
+}
+
+
+@media (max-width: 725px) {
+
+  .introCotent {
+    /* background-image: url("images/bg-pattern-intro-right-mobile.svg"); */
+    padding: 3% 3%;
+    margin-top:0;
+    text-align: center;
+    /* background-position: bottom right; */
+  }
+
+  .introRule {
+    visibility: hidden;
+  }
+
+  .introLeftImg {
+    position: absolute;
+    left:0;
+    top:31.5rem;
+    z-index:0;
+  }
+
+  .introRightImg{
+    right:0;
+    top:65rem;
+  }
+
+  .familyImg{
+    position: relative;
+    top:0;
+    margin:0;
+    z-index: 2;
+  }
+
+  .introTitle {
+    margin-top: 4rem;
+  }
+}
+/* Features Section */
+
+#features{
+  padding-top: 25rem;
+}
+
+.featureRule {
+  border-width: 2px;
+  border-color: hsl(216, 30%, 68%);
+  width: 12rem;
+  margin-left: 0;
+  padding-bottom: 8rem;
+}
+
+.featureTitle {
+  font-size: 4rem;
+  position:relative;
+  bottom: 4rem;
+}
+
+.featureIcons {
+  margin-bottom: 2rem;
+}
+
+.featureSubTitle {
+  font-size: 1.5rem;
+}
+
+.featureInfo {
+  font-size: 0.9rem;
+  color: hsl(273, 4%, 51%);
+  padding-right: 3rem;
+}
+
+@media (max-width: 768px) {
+  #features {
+    text-align: center;
+  }
+
+  .featureRule{
+    margin: auto;
+  }
+  .row div {
+    padding: 3% 1%;
+  }
+
+  .featureInfo {
+    padding: 0 2%;
+  }
+}
+
+/* MoreInfo Section */
+#moreInfo {
+  color:white;
+  padding:5% 4%;
+  background-color: hsl(256, 26%, 20%);
+  background-image: url("images//bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 7% 5%;
+}
+
+
+.moreInfo-container {
+  margin:0 auto;
+}
+
+
+.moreInfoTitle {
+  font-family: "DM Serif Display";
+  font-size:3.5rem;
+  margin:0 auto;
+}
+
+.moreInfoButton {
+  width:10rem;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+}
+/* Footer Section */
+
+#footer {
+  font-family: "Karla";
+  background-color: hsl(0, 0%, 98%);
+  height: 50rem;
+  background-image: url("images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 2% 4%;
+}
+
+.footerHead {
+  padding: 5rem 0;
+}
+
+.footerIcons {
+  /* margin-left: 67rem; */
+  display: inline;
+}
+
+.footerIcon {
+  margin: 0 0.1rem;
+}
+
+.footerRule {
+  border: 1px solid;
+  width: 85rem;
+  border-color: hsl(216, 30%, 68%);
+  margin:2rem auto 2rem 0;
+}
+
+.footerSubTitles {
+  color:hsl(273, 4%, 51%);
+  margin-bottom: 1.5rem;
+}
+
+.footerLinks {
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+
+  #footer {
+    text-align: center;
+    height: auto;
+  }
+  .footerIcons {
+    display: block;
+    margin:auto;
+    padding-top: 4rem;
+  }
+}
