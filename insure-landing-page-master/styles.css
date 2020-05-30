@@ -22,7 +22,6 @@ html,body
   background: white;
   position: relative;
   z-index: 4;
-  /* margin-bottom: -1rem; */
 }
 
 
@@ -65,9 +64,6 @@ html,body
   padding: 4% 50% 4% 3%;
   line-height: 1;
   text-align: left;
-  /* background-image: url("images/bg-pattern-intro-right-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: top right; */
 }
 
 .introLeftImg, .introRightImg {
@@ -87,8 +83,8 @@ html,body
 
 .familyImg {
   position: absolute;
-  margin-top: 12rem;
-  margin-left: 55rem;
+  margin-top: 12vw;
+  margin-left: 55vw;
 }
 
 .introRule {
@@ -121,11 +117,12 @@ html,body
 @media (max-width: 725px) {
 
   .introCotent {
-    /* background-image: url("images/bg-pattern-intro-right-mobile.svg"); */
+    background-image: url("images/bg-pattern-intro-left-mobile.svg");
     padding: 3% 3%;
     margin-top:0;
     text-align: center;
-    /* background-position: bottom right; */
+    background-position: top left;
+    background-repeat: no-repeat;
   }
 
   .introRule {
@@ -133,15 +130,13 @@ html,body
   }
 
   .introLeftImg {
-    position: absolute;
-    left:0;
-    top:31.5rem;
-    z-index:0;
+    visibility: hidden;
   }
 
   .introRightImg{
+    position: absolute;
     right:0;
-    top:65rem;
+    top:165vh;
   }
 
   .familyImg{
@@ -149,6 +144,11 @@ html,body
     top:0;
     margin:0;
     z-index: 2;
+    width: 100%;
+  }
+
+  .introImg {
+    width: 100%;
   }
 
   .introTitle {
@@ -232,9 +232,19 @@ html,body
 .moreInfoButton {
   width:10rem;
   border-radius: 0;
+  /* margin-left: 15rem;;
+  margin-top: 4rem; */
+  margin-left:25vw;
 }
 
 @media (max-width: 768px) {
+  #moreInfo {
+    text-align: center;
+  }
+
+  .moreInfoButton {
+    margin:0;
+  }
 }
 /* Footer Section */
 
